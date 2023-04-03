@@ -39,6 +39,8 @@ async function run(): Promise<void> {
     const draft = core.getBooleanInput('releaseDraft');
     const prerelease = core.getBooleanInput('prerelease');
     const commitish = core.getInput('releaseCommitish') || null;
+    const owner = core.getInput('owner');
+    const repo = core.getInput('repo');
 
     if (!releaseId) {
       if (Boolean(tagName) !== Boolean(releaseName)) {
@@ -114,7 +116,9 @@ async function run(): Promise<void> {
         body,
         commitish || undefined,
         draft,
-        prerelease
+        prerelease,
+        owner,
+        repo
       );
       releaseId = releaseData.id;
       core.setOutput('releaseUploadUrl', releaseData.uploadUrl);
