@@ -224,6 +224,8 @@ These inputs allow you to modify the GitHub release.
 | `releaseDraft`     |  false   | Whether the release to create is a draft or not                                            | bool   | false                 |
 | `prerelease`       |  false   | Whether the release to create is a prerelease or not                                       | bool   | false                 |
 | `releaseCommitish` |  false   | Any branch or commit SHA the Git tag is created from, unused if the Git tag already exists | string | SHA of current commit |
+| `owner`            |  false   | Owner of repo that artifacts are uploaded to. By default, it will be current repo onwer    |
+| `repo`             |  false   | Repo that artifacts are uploaded to. By default, it will be current repo                   |
 
 ## Outputs
 
