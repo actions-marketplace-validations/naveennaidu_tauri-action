@@ -1,8 +1,8 @@
-name: 'tauri-action'
-description: 'Build tauri binaries for MacOS, Windows and Linux'
+name: 'custom-tauri-action'
+description: 'Build tauri binaries for MacOS, Windows and Linux and deploy other specified repo'
 icon: 'download-cloud'
 color: 'blue'
-author: 'Lucas Nogueira <lucas@tauri.studio>'
+author: 'Naveen Naidu <mnaveennaidu9927@gmail.com>'
 inputs:
   releaseId:
     description: 'The id of the release to upload artifacts as release assets'
